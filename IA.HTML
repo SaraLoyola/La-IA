@@ -1,0 +1,110 @@
+<!DOCTYPE html> <html lang="es"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Inteligencia Artificial</title> <style> body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; background-color: #f4f4f4; } header { background: #007bff; color: #fff; padding: 20px 0; text-align: center; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); } header h1 { margin: 0; font-size: 2.5em; } nav { text-align: center; margin: 20px 0; } nav a { background: #007bff; color: #fff; padding: 10px 20px; margin: 0 10px; text-decoration: none; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); transition: background 0.3s ease; } nav a:hover { background: #0056b3; } main { max-width: 900px; margin: 20px auto; padding: 0 20px; } section { background: #fff; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); } h2 { color: #007bff; border-bottom: 2px solid #007bff; padding-bottom: 10px; margin-bottom: 20px; } h3 { color: #0056b3; } ul { list-style: none; padding: 0; } ul li { background: #e9ecef; border-left: 5px solid #007bff; margin-bottom: 10px; padding: 10px; border-radius: 5px; } footer { background: #007bff; color: #fff; padding: 15px 0; text-align: center; border-top: 2px solid #0056b3; } .image-container { text-align: center; margin-bottom: 20px; } .image-container img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); } .volver-btn { display: block; margin: 20px 0; padding: 10px 20px; background-color: #007bff; color: #fff; text-align: center; text-decoration: none; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); transition: background 0.3s ease; } .volver-btn:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Inteligencia Artificial</h1>
+    </header>
+    
+    <nav>
+        <a href="#que-es">¿Qué es la IA?</a>
+        <a href="#tipos">Tipos de IA</a>
+        <a href="#ejemplo">Ejemplo de IA</a>
+        <a href="#conclusiones">Conclusiones</a>
+        <a href="#video">Video</a>
+    </nav>
+
+    <main>
+        <!-- Sección: ¿Qué es la Inteligencia Artificial? -->
+        <section id="que-es">
+            <h2>¿Qué es la Inteligencia Artificial?</h2>
+            <div class="">
+                <img src="data:image/jpeg;base64,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" alt="Inteligencia Artificial">
+            </div>
+            <p>
+                La inteligencia artificial (IA) se refiere a la simulación de procesos de inteligencia humana por parte de sistemas computacionales. Esto incluye la capacidad de aprender, razonar y resolver problemas. La IA se utiliza para crear sistemas que pueden realizar tareas que normalmente requieren inteligencia humana.
+            </p>
+            <h3>Ventajas</h3>
+            <ul>
+                <li><strong>Automatización de Tareas:</strong> La IA puede realizar tareas repetitivas y monótonas de manera más rápida y precisa que los humanos.</li>
+                <li><strong>Mejora en la Precisión:</strong> Algoritmos de IA pueden analizar grandes volúmenes de datos con alta precisión.</li>
+                <li><strong>Disponibilidad 24/7:</strong> Los sistemas de IA no requieren descansos y pueden operar continuamente.</li>
+            </ul>
+            <h3>Desventajas</h3>
+            <ul>
+                <li><strong>Desempleo:</strong> La automatización puede reemplazar empleos humanos, especialmente en tareas rutinarias.</li>
+                <li><strong>Sesgos:</strong> Los algoritmos pueden reflejar sesgos presentes en los datos de entrenamiento.</li>
+                <li><strong>Privacidad:</strong> El uso de IA puede llevar a preocupaciones sobre la privacidad y el uso de datos personales.</li>
+            </ul>
+            <a href="#top" class="volver-btn">Volver</a>
+        </section>
+
+        <!-- Sección: Tipos de Inteligencia Artificial -->
+        <section id="tipos">
+            <h2>Tipos de Inteligencia Artificial</h2>
+            <div class="image-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRie75SOBDiABpSXMT89c-_OC7wEOVblQWkgg&s?text=Tipos+de+IA" alt="Tipos de IA">
+            </div>
+            <ul>
+                <li><strong>IA Estrecha (Débil):</strong> Diseñada para realizar tareas específicas, como asistentes virtuales o sistemas de recomendación.</li>
+                <li><strong>IA General (Fuerte):</strong> Aún en desarrollo, tiene la capacidad de entender, aprender y aplicar inteligencia de manera similar a un humano en una amplia gama de actividades.</li>
+                <li><strong>IA Superinteligente:</strong> Teórica en este momento, se refiere a una IA que supera la inteligencia humana en todos los aspectos.</li>
+            </ul>
+            <a href="#top" class="volver-btn">Volver</a>
+        </section>
+
+        <!-- Sección: Ejemplo de un Aplicativo de Inteligencia Artificial -->
+        <section id="ejemplo">
+            <h2>Ejemplo de un Aplicativo de Inteligencia Artificial</h2>
+            <div class="image-container">
+                <img src="https://i.blogs.es/7b4ba2/logo-assistant/450_1000.jpg" alt="Google Assistant">
+            </div>
+            <p>
+                Un ejemplo destacado de una aplicación de IA es <strong>Google Assistant</strong>. Este asistente virtual utiliza procesamiento de lenguaje natural (NLP) y aprendizaje automático para entender y responder a las consultas de los usuarios. Puede realizar tareas como configurar recordatorios, responder preguntas generales y controlar dispositivos inteligentes en el hogar.
+            </p>
+            <a href="#top" class="volver-btn">Volver</a>
+        </section>
+
+        <!-- Sección: Conclusiones -->
+        <section id="conclusiones">
+            <h2>Conclusiones: ¿En qué casos se debe usar la IA y en qué casos no?</h2>
+            <div class="image-container">
+                <img src="https://www.extrasoft.es/wp-content/uploads/2023/05/concepto-de-inteligencia-artificial-980x560.jpg?text=Conclusiones+IA" alt="Conclusiones IA">
+            </div>
+            <p>
+                La inteligencia artificial puede ser extremadamente beneficiosa cuando se utiliza para mejorar la eficiencia, precisión y accesibilidad en diversas áreas, como la atención médica, la automatización industrial y el servicio al cliente. Sin embargo, es importante considerar sus limitaciones y posibles impactos negativos.
+            </p>
+            <p>
+                Se debe usar IA en casos donde:
+            </p>
+            <ul>
+                <li>La automatización puede aumentar la eficiencia y reducir errores.</li>
+                <li>Se requiere analizar grandes volúmenes de datos para obtener insights valiosos.</li>
+                <li>Existen tareas repetitivas y rutinarias que no añaden valor significativo cuando las realiza un humano.</li>
+            </ul>
+            <p>
+                No se debe usar IA en casos donde:
+            </p>
+            <ul>
+                <li>Se necesitan decisiones basadas en empatía y juicio humano, como en el cuidado personal o en situaciones éticamente complejas.</li>
+                <li>Los datos disponibles están sesgados y podrían llevar a resultados injustos.</li>
+                <li>Existen preocupaciones significativas sobre la privacidad y la seguridad de los datos.</li>
+            </ul>
+            <a href="#top" class="volver-btn">Volver</a>
+        </section>
+
+           <!-- Sección: Video -->
+        <section id="video">
+       <h2>Video</h2>
+     <iframe width="853" height="480" src="https://www.youtube.com/embed/WCfeu-fEht4" title="Que es la Inteligencia Artificial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </ul>
+            </div>
+            <a href="#top" class="volver-btn">Volver</a>
+       </section>
+        </main>
+
+    <footer>
+        <p>&copy; 2024 Información sobre Inteligencia Artificial</p>
+    </footer>
+</body>
+</html>
